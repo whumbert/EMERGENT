@@ -1,0 +1,106 @@
+{
+  "summary": {
+    "total_tests": 16,
+    "passed_tests": 15,
+    "success_rate": "93.8%",
+    "timestamp": "2025-10-20T23:12:02.268156"
+  },
+  "detailed_results": [
+    {
+      "test": "User Login (existing user)",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-20T23:12:01.828145"
+    },
+    {
+      "test": "Login Invalid Credentials",
+      "success": true,
+      "details": "Status: 401",
+      "timestamp": "2025-10-20T23:12:01.870978"
+    },
+    {
+      "test": "Get User Profile",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-20T23:12:01.912225"
+    },
+    {
+      "test": "Unauthorized Access Check",
+      "success": false,
+      "details": "Status: 403 (expected 401), Response: {'detail': 'Not authenticated'}",
+      "timestamp": "2025-10-20T23:12:01.954728"
+    },
+    {
+      "test": "Get Categories",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-20T23:12:01.994908"
+    },
+    {
+      "test": "Categories Count Check",
+      "success": true,
+      "details": "Found 8 categories",
+      "timestamp": "2025-10-20T23:12:01.995390"
+    },
+    {
+      "test": "Create Shopping Item",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-20T23:12:02.073112"
+    },
+    {
+      "test": "Create Item with Photo",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-20T23:12:02.109289"
+    },
+    {
+      "test": "Get Shopping Items",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-20T23:12:02.151168"
+    },
+    {
+      "test": "Items Retrieved",
+      "success": true,
+      "details": "Found 2 items",
+      "timestamp": "2025-10-20T23:12:02.151605"
+    },
+    {
+      "test": "Update Shopping Item",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-20T23:12:02.189317"
+    },
+    {
+      "test": "Toggle Item Purchase Status",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-20T23:12:02.230372"
+    },
+    {
+      "test": "Item Toggle Status",
+      "success": true,
+      "details": "Item is_purchased: True",
+      "timestamp": "2025-10-20T23:12:02.230810"
+    },
+    {
+      "test": "Toggle Item Purchase Status",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-20T23:12:02.267438"
+    },
+    {
+      "test": "Item Toggle Status",
+      "success": true,
+      "details": "Item is_purchased: True",
+      "timestamp": "2025-10-20T23:12:02.268012"
+    },
+    {
+      "test": "Upload Endpoint",
+      "success": true,
+      "details": "Skipped - requires multipart form data",
+      "timestamp": "2025-10-20T23:12:02.268028"
+    }
+  ]
+}
